@@ -1,0 +1,49 @@
+/**Classe de conta corrente e de conta poupança
+* @author André da Silva Galvão
+*/
+
+/**corpo da class ContaTeste*/
+
+public class ContaTeste{
+	private String nome;
+	private Double contaCorrente;
+	private Double contaPoupança;
+	public ContaTeste(){
+		nome = "André";
+		contaCorrente = (double) 0;
+		contaPoupança = (double) 0;
+	}
+	public ContaTeste(String s,double p, double g) {
+		nome = s;
+		contaCorrente = p;
+		contaPoupança = g;
+	}
+	public void SetNome(String s) {
+		nome=s;
+	}	
+	public String getnome() {
+		return nome;
+	}	
+	public void setPotenciaMax(double p) {
+		contaCorrente = p;
+	}	
+	public double getPotenciaMax() {
+		return contaCorrente;
+	}	
+	public void setGracaoAtual(double g) {
+		contaPoupança = g;
+	}	
+	public double getGeracaoAtual() {
+		return contaPoupança;
+	}	
+
+
+/** Método para mostrar as contas e o nome do titular da conta*/
+	
+	public void mostrarConta() {
+		System.out.printf("\n Nome Titular da Conta: %s \n", nome);
+		System.out.printf("Conta corrente: %8.2f\n", contaCorrente);
+		System.out.printf("conta poupança: %8.2f\n", contaPoupança);		
+	}
+	
+}
